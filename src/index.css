@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-@theme{
-  --color-primary: #00cdac;
+html{
+  @apply scroll-smooth
 }
 
-@utility button {
-  @apply py-2 px-6 border-2 border-primary text-primary font-bold text-xl hover:bg-primary hover:text-white transition
+@theme{
+  --color-primary: #5C7457;
 }

@@ -13,7 +13,7 @@ export const heroData = {
 
 export const aboutData = {
     title: "about me",
-    description: "I believe the best way to learn is by getting your hands dirty and building real projects. Every challenge is a chance to grow, and I’m always excited to turn ideas into working solutions."
+    description: "I believe that learning happens through action. By building projects from the ground up, I gain real experience, deepen my understanding, and continue moving toward the developer I aspire to become."
 }
 
 export const projectsData = {
