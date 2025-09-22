@@ -6,7 +6,7 @@ const Projects = () => {
   const { projects } = projectsData;
 
   return (
-    <section className="relative py-12">
+    <section className="relative py-12 text-gray-800">
       <h2 className="section-heading">{projectsData.title}</h2>
       <div className="container mx-auto px-4 flex flex-col items-center gap-y-16">
         {projects.map((project) => (

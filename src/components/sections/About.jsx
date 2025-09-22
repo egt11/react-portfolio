@@ -16,8 +16,10 @@ const About = () => {
         </div>
 
         <div className='flex flex-col gap-8 items-center text-center md:items-start md:text-left md:w-1/2'>
-          <p className='text-lg'>{aboutData.description}</p>
-          <Button text={aboutData.button} href={"/TanEddhan_Resume.pdf"} background={"primary"} />
+          <p className='text-base lg:text-lg font-light leading-relaxed'>{aboutData.description}</p>
+          <a href="/TanEddhan_Resume.pdf" target='_blank'>
+            <Button text={aboutData.button} background={"primary"} />
+          </a>
         </div>
       </div>
     </section>
