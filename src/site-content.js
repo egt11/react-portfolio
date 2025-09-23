@@ -6,11 +6,13 @@ import Contact from "./components/sections/Contact";
 
 export { Hero, About, Projects, Contact };
 
+// hero section
 export const heroData = {
     name: "Eddhan",
     button: "know more",
 };
 
+// about section
 export const aboutData = {
     title: "about me",
     description:
@@ -20,6 +22,7 @@ export const aboutData = {
     alt: "picture of me",
 };
 
+// projects section
 export const projectsData = {
     title: "projects",
     projects: [
@@ -27,7 +30,7 @@ export const projectsData = {
             id: 0,
             name: "trello clone",
             description:
-                "Developed a clone of Trello, a popular project management tool to enhance javascript skills. Implemented drag-and-drop features for tasks and used localStorage to save user data even after page reloads.",
+                "Developed a clone of Trello, a popular project management tool, with drag-and-drop feature for tasks and localStorage to save user data.",
             image: "/images/projects/project_trello.jpg",
             alt: "project image",
             button: "view demo",
@@ -45,3 +48,19 @@ export const projectsData = {
         },
     ],
 };
+
+// animations
+export const fadeIn = {
+    hidden: {y: -100, opacity: 0},
+    visible: {y:0, opacity: 1},
+}
+
+export const fadeInLeft = {
+    hidden: {x: -50, opacity: 0},
+    visible: {x:0, opacity: 1}
+}
+
+export const fadeInRight = {
+    hidden: {x: 50, opacity: 0},
+    visible: {x:0, opacity: 1}
+}
