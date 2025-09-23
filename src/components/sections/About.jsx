@@ -7,8 +7,8 @@ const About = () => {
   return (
     <section className='relative py-12 bg-primary text-white' id='about'>
       <h2 className='section-heading'>{aboutData.title}</h2>
-      <div className="container mx-auto px-4 flex flex-col md:flex-row md:justify-around items-center gap-6">
-        <motion.div className="w-full max-w-xs md:max-w-[350px] lg:max-w-md" variants={fadeInLeft} initial="hidden" whileInView="visible" viewport={{ once: true, amount:1 }} transition={{duration: 0.5}}>
+      <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row md:justify-around items-center gap-y-12">
+        <motion.div className="w-full max-w-xs md:max-w-[350px] lg:max-w-md" variants={fadeInLeft} initial="hidden" whileInView="visible" viewport={{ once: true, amount:0.5 }} transition={{duration: 0.5}}>
           <motion.img
             src={aboutData.image}
             alt={aboutData.alt}
@@ -17,7 +17,7 @@ const About = () => {
           />
         </motion.div>
 
-        <motion.div className='flex flex-col gap-8 items-center text-center md:items-start md:text-left md:w-1/2' variants={fadeInRight} initial="hidden" whileInView="visible" viewport={{ once: true, amount:1 }} transition={{duration: 0.5}}>
+        <motion.div className='flex flex-col gap-4 items-center text-center md:items-start md:text-left md:w-1/2' variants={fadeInRight} initial="hidden" whileInView="visible" viewport={{ once: true, amount:1 }} transition={{duration: 0.5}}>
           <p className='text-base lg:text-lg font-light leading-relaxed'>{aboutData.description}</p>
           <a href="/TanEddhan_Resume.pdf" target='_blank'>
             <Button text={aboutData.button} background={"primary"} />
