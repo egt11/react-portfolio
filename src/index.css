@@ -10,7 +10,12 @@ body {
 }
 
 @theme {
-  --color-primary: #5c7457;
+  /* dark violet 32213A */
+  /* army green 5C7457 */
+  /* yinmin bkue 3D5A80 */
+
+  
+  --color-primary: #3D5A80;
 }
 
 @utility section-heading {

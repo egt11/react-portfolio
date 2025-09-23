@@ -14,7 +14,7 @@ const Footer = () => {
         <div className='flex flex-col gap-4'>
           <div className='flex items-center justify-center gap-8'>
             {socials.map(item => (
-              <motion.a href={item.link} target='_blank' key={item.name} whileHover={{ y: -2 }} className='p-2'>
+              <motion.a href={item.link} target='_blank' key={item.name} whileHover={{ y: -2 }} className='p-2 hover:text-primary'>
                 <item.icon size={40} />
               </motion.a>
             ))}
@@ -23,8 +23,8 @@ const Footer = () => {
             &copy; {year} | Developed by Eddhan Gabryell Tan
           </p>
         </div>
-        <motion.button onClick={scrollToTop} whileHover={{ scale: 1.1 }} className='cursor-pointer'>
-          <RiArrowUpLine size={30} />
+        <motion.button onClick={scrollToTop} whileHover={{ y:-5, scale: 1.1 }} className='cursor-pointer'>
+          <RiArrowUpLine size={30} className='hover:text-primary' />
         </motion.button>
       </div>
     </footer>
