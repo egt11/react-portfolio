@@ -3,8 +3,10 @@ import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
+import Footer from "./components/Footer";
+import { RiFacebookBoxFill, RiGithubFill, RiLinkedinFill, RiTwitterXFill, RiTwitterXLine } from "@remixicon/react";
 
-export { Hero, About, Projects, Contact };
+export { Hero, About, Projects, Contact, Footer };
 
 // hero section
 export const heroData = {
@@ -49,18 +51,28 @@ export const projectsData = {
     ],
 };
 
+// icons
+export const icons = {
+    socials: [
+        { name: "linkedin", icon: RiLinkedinFill, link: "www.linkedin.com/in/eddhan-gabryell-tan-47646536b" },
+        { name: "facebook", icon: RiFacebookBoxFill, link: "https://www.facebook.com/eddhanpoinks" },
+        { name: "github", icon: RiGithubFill, link: 'https://github.com/egt11' }
+    ],
+    techStack: [{}]
+}
+
 // animations
 export const fadeIn = {
-    hidden: {y: -100, opacity: 0},
-    visible: {y:0, opacity: 1},
+    hidden: { y: -100, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
 }
 
 export const fadeInLeft = {
-    hidden: {x: -50, opacity: 0},
-    visible: {x:0, opacity: 1}
+    hidden: { x: -50, opacity: 0 },
+    visible: { x: 0, opacity: 1 }
 }
 
 export const fadeInRight = {
-    hidden: {x: 50, opacity: 0},
-    visible: {x:0, opacity: 1}
+    hidden: { x: 50, opacity: 0 },
+    visible: { x: 0, opacity: 1 }
 }
