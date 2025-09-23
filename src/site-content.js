@@ -67,6 +67,16 @@ export const fadeIn = {
     visible: { y: 0, opacity: 1 },
 }
 
+export const fadeInStagger = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.5, staggerChildren: 0.7 } }
+}
+
+export const fadeInStaggerChildren = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+}
+
 export const fadeInLeft = {
     hidden: { x: -50, opacity: 0 },
     visible: { x: 0, opacity: 1 }
@@ -76,3 +86,4 @@ export const fadeInRight = {
     hidden: { x: 50, opacity: 0 },
     visible: { x: 0, opacity: 1 }
 }
+
