@@ -46,7 +46,7 @@ export const projectsData = {
             image: "images/projects/project_e-comm.webp",
             alt: "project image",
             button: "view demo",
-            href: "#"
+            href: "images/projects/project_e-comm_demo.mp4"
         },
     ],
 };
