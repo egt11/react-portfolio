@@ -54,7 +54,7 @@ export const projectsData = {
 // icons
 export const icons = {
     socials: [
-        { name: "linkedin", icon: RiLinkedinFill, link: "www.linkedin.com/in/eddhan-gabryell-tan-47646536b" },
+        { name: "linkedin", icon: RiLinkedinFill, link: "https://www.linkedin.com/in/eddhan-gabryell-tan-47646536b" },
         { name: "facebook", icon: RiFacebookBoxFill, link: "https://www.facebook.com/eddhanpoinks" },
         { name: "github", icon: RiGithubFill, link: 'https://github.com/egt11' }
     ],
