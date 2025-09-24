@@ -19,7 +19,7 @@ const About = () => {
 
         <motion.div className='flex flex-col gap-4 items-center text-center md:items-start md:text-left md:w-1/2' variants={fadeInRight} initial="hidden" whileInView="visible" viewport={{ once: true, amount:1 }} transition={{duration: 0.5}}>
           <p className='text-base lg:text-lg font-light leading-relaxed'>{aboutData.description}</p>
-          <a href="/TanEddhan_Resume.pdf" target='_blank'>
+          <a href="TanEddhan_Resume.pdf" target='_blank'>
             <Button text={aboutData.button} background={"primary"} />
           </a>
         </motion.div>

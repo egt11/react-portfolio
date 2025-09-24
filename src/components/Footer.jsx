@@ -6,7 +6,6 @@ import { RiArrowUpLine } from '@remixicon/react'
 const Footer = () => {
   const { socials } = icons
   const year = new Date().getFullYear();
-  const scrollToTop = () => window.scrollTo(0, 0)
 
   return (
     <footer className='py-12 bg-[#333]'>
@@ -23,9 +22,12 @@ const Footer = () => {
             &copy; {year} | Developed by Eddhan Gabryell Tan
           </p>
         </div>
-        <motion.button onClick={scrollToTop} whileHover={{ y:-5, scale: 1.1 }} className='cursor-pointer'>
-          <RiArrowUpLine size={30} className='hover:text-primary' />
-        </motion.button>
+        <a href="#home">
+          <motion.button whileHover={{ y: -5, scale: 1.1 }} className='cursor-pointer'>
+            <RiArrowUpLine size={30} className='hover:text-primary' />
+          </motion.button>
+        </a>
+
       </div>
     </footer>
   )
